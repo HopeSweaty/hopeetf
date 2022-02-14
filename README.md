@@ -1,7 +1,5 @@
 # HopeETF
 
-![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
-![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![Solidity](https://img.shields.io/badge/Solidity-%23363636.svg?style=for-the-badge&logo=solidity&logoColor=white)
 [![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white)](https://hopeindustries.notion.site/ETF-and-Crytocurrency-Backstory-ae6502c44e854b849e230c20510320a5)
 [![built-with openzeppelin](https://img.shields.io/badge/built%20with-OpenZeppelin-3677FF)](https://docs.openzeppelin.com/)
@@ -9,16 +7,6 @@
 HOPE is an crytocurrency that is based on the Avax protocol. HOPE is a decentralized exchange traded currency that allows users to fund other currencies. So users dont need to manage all there crypto assets on there own. Users can simply swap for HOPE tokens and HOPE tokens can be swapped for other currencies. You can check our Notion page for more information.
 
 This repository is front-end application that allows easy withdrawal using web3.
-
-🚀DEMO: https://ethereum-boilerplate.github.io/ethereum-boilerplate
-
-This boilerplate is built on [react-moralis](https://github.com/MoralisWeb3/react-moralis) and [Moralis](https://moralis.io?utm_source=github&utm_medium=readme&utm_campaign=ethereum-boilerplate). Also has its own context provider for quick access to `chainId` or `ethAddress`
-
-There are many components in this boilerplate that do not require an active web3 provider, they use Moralis Web3 API. Moralis supports the most popular blockchains and their test networks. You can find a list of all available networks in [Moralis Supported Chains](https://docs.moralis.io/moralis-server/web3-sdk/intro#supported-chains)
-
-Please check the [official documentation of Moralis](https://docs.moralis.io/#user) for all the functionalities of Moralis.
-
-![daPPdemo](https://user-images.githubusercontent.com/78314301/147088732-e8bbd451-9351-4338-879c-b1535f4df319.gif)
 
 # ⭐️ `Star us`
 
