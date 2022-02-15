@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import Account from "components/Account/Account";
 import Chains from "components/Chains";
-import TokenPrice from "components/TokenPrice";
+// import TokenPrice from "components/TokenPrice";
 import ERC20Balance from "components/ERC20Balance";
 import ERC20Transfers from "components/ERC20Transfers";
 import DEX from "components/DEX";
@@ -55,7 +55,7 @@ const styles = {
     fontWeight: "600",
   },
 };
-const App = ({ isServerInfo }) => {
+const App = () => {
   const { isWeb3Enabled, enableWeb3, isAuthenticated, isWeb3EnableLoading } =
     useMoralis();
 
@@ -74,12 +74,12 @@ const App = ({ isServerInfo }) => {
           <MenuItems />
           <div style={styles.headerRight}>
             <Chains />
-            <TokenPrice
+            {/* <TokenPrice
               address="0x1f9840a85d5af5bf1d1762f925bdaddc4201f984"
               chain="eth"
               image="https://cloudflare-ipfs.com/ipfs/QmXttGpZrECX5qCyXbBQiqgQNytVGeZW5Anewvh2jc4psg/"
               size="40px"
-            />
+            /> */}
             <NativeBalance />
             <Account />
           </div>
@@ -88,7 +88,7 @@ const App = ({ isServerInfo }) => {
         <div style={styles.content}>
           <Switch>
             <Route exact path="/quickstart">
-              <QuickStart isServerInfo={isServerInfo} />
+              <QuickStart />
             </Route>
             <Route path="/wallet">
               <Wallet />
