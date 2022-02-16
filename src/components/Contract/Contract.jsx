@@ -89,7 +89,6 @@ export default function Contract() {
 
               for (let method of contract?.abi) {
                 if (method.name !== name) continue;
-                console.log(method);
                 if (method.stateMutability === "view") isView = true;
               }
 
@@ -114,7 +113,6 @@ export default function Contract() {
                     message: "🔊 New Transaction",
                     description: `${hash}`,
                   });
-                  console.log("🔊 New Transaction", hash);
                 })
                   .on("receipt", (receipt) => {
                     setResponses({
@@ -125,13 +123,11 @@ export default function Contract() {
                       message: "📃 New Receipt",
                       description: `${receipt.transactionHash}`,
                     });
-                    console.log("🔊 New Receipt: ", receipt);
                   })
                   .on("error", (error) => {
                     console.error(error);
                   });
               } else {
-                console.log("options22", options);
                 Moralis.executeFunction(options).then((response) =>
                   setResponses({
                     ...responses,
