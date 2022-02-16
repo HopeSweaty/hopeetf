@@ -1,7 +1,7 @@
 # HopeETF
 
 ![Solidity](https://img.shields.io/badge/Solidity-%23363636.svg?style=for-the-badge&logo=solidity&logoColor=white)
-[![Notion](https://hopeindustries.notion.site/hopeindustries/Hope-Coin-HOPE-95a1c3bb212b4402820c133e5643c504)
+[![Notion](https://hopeindustries.notion.site/hopeindustries/Hope-Coin-HOPE-95a1c3bb212b4402820c133e5643c504)]
 [![built-with openzeppelin](https://img.shields.io/badge/built%20with-OpenZeppelin-3677FF)](https://docs.openzeppelin.com/)
 
 HOPE is an crytocurrency that is based on the Avax protocol. HOPE is a decentralized exchange traded currency that allows users to fund other currencies. So users dont need to manage all there crypto assets on there own. Users can simply swap for HOPE tokens and HOPE tokens can be swapped for other currencies. You can check our Notion page for more information.
