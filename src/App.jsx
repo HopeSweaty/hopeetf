@@ -14,17 +14,17 @@ import ERC20Transfers from "components/ERC20Transfers";
 import DEX from "components/DEX";
 import NFTBalance from "components/NFTBalance";
 import Wallet from "components/Wallet";
-import { Layout, Tabs } from "antd";
+import { Layout, Tabs, Alert } from "antd";
 import "antd/dist/antd.css";
 import NativeBalance from "components/NativeBalance";
 import "./style.css";
-import QuickStart from "components/QuickStart";
+// import QuickStart from "components/QuickStart";
 import Contract from "components/Contract/Contract";
 import Text from "antd/lib/typography/Text";
 import Ramper from "components/Ramper";
 import MenuItems from "./components/MenuItems";
 import Dashboard from "components/Dashboard";
-
+import Exchange from "components/Exchange";
 const { Header, Footer } = Layout;
 
 const styles = {
@@ -89,7 +89,7 @@ const App = () => {
 
         <div style={styles.content}>
           <Switch>
-            <Route exact path="/quickstart">
+            <Route exact path="/dashboard">
               <Dashboard />
             </Route>
             <Route path="/wallet">
@@ -123,8 +123,11 @@ const App = () => {
             <Route path="/contract">
               <Contract />
             </Route>
+            <Route path="/exchange">
+              <Exchange />
+            </Route>
             <Route path="/">
-              <QuickStart />
+              <Dashboard />
             </Route>
             <Route path="/ethereum-boilerplate">
               <Redirect to="/quickstart" />
@@ -136,6 +139,13 @@ const App = () => {
         </div>
       </Router>
       <Footer style={{ textAlign: "center" }}>
+        <Alert
+          style={{ margin: "auto", width: "400px" }}
+          message="Warning"
+          description="Don't forget HopeEFT is use for Testnet only."
+          type="warning"
+          showIcon
+        />
         <Text style={{ display: "block" }}>
           ⭐️ Please star this{" "}
           <a

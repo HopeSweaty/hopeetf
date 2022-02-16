@@ -97,14 +97,12 @@ function Transfer() {
           message: "🔊 New Transaction",
           description: `${hash}`,
         });
-        console.log("🔊 New Transaction", hash);
       })
       .on("receipt", (receipt) => {
         openNotification({
           message: "📃 New Receipt",
           description: `${receipt.transactionHash}`,
         });
-        console.log("🔊 New Receipt: ", receipt);
         setIsPending(false);
       })
       .on("error", (error) => {
