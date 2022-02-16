@@ -23,6 +23,8 @@ import Contract from "components/Contract/Contract";
 import Text from "antd/lib/typography/Text";
 import Ramper from "components/Ramper";
 import MenuItems from "./components/MenuItems";
+import Dashboard from "components/Dashboard";
+
 const { Header, Footer } = Layout;
 
 const styles = {
@@ -88,7 +90,7 @@ const App = () => {
         <div style={styles.content}>
           <Switch>
             <Route exact path="/quickstart">
-              <QuickStart />
+              <Dashboard />
             </Route>
             <Route path="/wallet">
               <Wallet />
@@ -122,7 +124,7 @@ const App = () => {
               <Contract />
             </Route>
             <Route path="/">
-              <Redirect to="/quickstart" />
+              <QuickStart />
             </Route>
             <Route path="/ethereum-boilerplate">
               <Redirect to="/quickstart" />
@@ -143,7 +145,7 @@ const App = () => {
           >
             project
           </a>
-          , every star makes us very happy!
+          , every star makes me very happy!
         </Text>
 
         <Text style={{ display: "block" }}>
